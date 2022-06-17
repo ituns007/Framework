@@ -1,0 +1,59 @@
+apply plugin: 'com.android.library'
+apply from: "publish.gradle"
+
+android {
+    compileSdkVersion ANDROID_SDK_COMPILE
+    buildToolsVersion ANDROID_BUILD_TOOLS
+    defaultConfig {
+        minSdkVersion ANDROID_SDK_MIN
+        targetSdkVersion ANDROID_SDK_TARGET
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            consumerProguardFiles 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    testImplementation "junit:junit:${TEST_JUNIT}"
+    androidTestImplementation "androidx.test.ext:junit:${TEST_ANDROIDX_JUNIT}"
+    androidTestImplementation "androidx.test.espresso:espresso-core:${TEST_ANDROIDX_ESPRESSO}"
+
+    api "androidx.appcompat:appcompat:1.4.0"
+    api "androidx.startup:startup-runtime:1.1.0"
+    api "androidx.navigation:navigation-ui:2.3.5"
+    api "androidx.navigation:navigation-fragment:2.3.5"
+    api 'androidx.constraintlayout:constraintlayout:2.1.2'
+
+    api "androidx.camera:camera-core:1.0.1"
+    api "androidx.camera:camera-camera2:1.0.1"
+    api "androidx.camera:camera-lifecycle:1.0.1"
+    api "androidx.camera:camera-view:1.0.0-alpha29"
+    api "androidx.camera:camera-extensions:1.0.0-alpha28"
+
+    api "org.ituns.android:logcat:1.0.0"
+    api "org.ituns.android:concurrent:1.0.3"
+    api "org.ituns.network:okhttp-stable:2.0.8"
+
+    api "com.google.code.gson:gson:2.8.6"
+    api "com.google.guava:guava:31.0.1-android"
+    api "com.google.android.material:material:1.4.0"
+    api "com.google.android.exoplayer:exoplayer:2.13.3"
+
+    // glide
+    api "com.github.bumptech.glide:glide:4.12.0"
+    annotationProcessor "com.github.bumptech.glide:compiler:4.11.0"
+
+    api 'com.tencent.tbs:tbssdk:44181'
+    api 'com.github.HuanTanSheng:EasyPhotos:3.1.3'
+    api 'com.contrarywind:Android-PickerView:4.1.9'
+
+    api "com.kongzue.dialog_v3x:dialog:3.2.4"   //2M
+//    api "com.github.kongzue.DialogX:DialogX:0.0.43"
+//    api "com.github.kongzue.DialogX:DialogXIOSStyle:0.0.43"
+}

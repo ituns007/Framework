@@ -1,0 +1,8 @@
+rootProject.name = "Framework"
+include ':app'
+include ':master'
+
+//include ':base'
+//include ':video'
+//include ':camera'
+//include ':tencent'

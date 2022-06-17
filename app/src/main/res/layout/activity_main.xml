@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <org.ituns.framework.master.widgets.round.RoundTextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Test1"
+        android:textColor="@color/white"
+        android:onClick="clickTest1"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:rtv_solid_color="@color/teal_700"
+        app:rtv_corners_radius="5dp"/>
+
+    <org.ituns.framework.master.widgets.round.RoundTextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Test2"
+        android:textColor="@color/white"
+        android:onClick="clickTest2"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:rtv_solid_color="@color/teal_700"
+        app:rtv_corners_radius="5dp"/>
+
+    <org.ituns.framework.master.widgets.round.RoundTextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Test3"
+        android:textColor="@color/white"
+        android:onClick="clickTest3"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:rtv_solid_color="@color/teal_700"
+        app:rtv_corners_radius="5dp"/>
+
+    <org.ituns.framework.master.widgets.round.RoundTextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Test4"
+        android:textColor="@color/white"
+        android:onClick="clickTest4"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:rtv_solid_color="@color/teal_700"
+        app:rtv_corners_radius="5dp"/>
+
+    <org.ituns.framework.master.widgets.round.RoundTextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Test5"
+        android:textColor="@color/white"
+        android:onClick="clickTest5"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:rtv_solid_color="@color/teal_700"
+        app:rtv_corners_radius="5dp"/>
+
+    <org.ituns.framework.master.widgets.round.RoundTextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="clickTest6"
+        android:gravity="center"
+        android:text="Test6"
+        android:textColor="@color/white"
+        app:rtv_solid_color="@color/teal_700"
+        app:rtv_corners_radius="5dp"/>
+</LinearLayout>

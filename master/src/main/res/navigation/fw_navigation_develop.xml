@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fw_navigation_develop"
+    app:startDestination="@id/actionFragment">
+    <fragment
+        android:id="@+id/actionFragment"
+        android:name="org.ituns.framework.master.modules.develop.fragment.ActionFragment"
+        android:label="ActionFragment" >
+    </fragment>
+    <fragment
+        android:id="@+id/envCollectFragment"
+        android:name="org.ituns.framework.master.modules.develop.fragment.EnvCollectFragment"
+        android:label="EnvCollectFragment" >
+    </fragment>
+    <fragment
+        android:id="@+id/envDetailFragment"
+        android:name="org.ituns.framework.master.modules.develop.fragment.EnvDetailFragment"
+        android:label="EnvDetailFragment" />
+    <fragment
+        android:id="@+id/cleanFragment"
+        android:name="org.ituns.framework.master.modules.develop.fragment.CleanFragment"
+        android:label="CleanFragment" />
+</navigation>

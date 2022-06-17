@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ClearView">
+        <attr name="clearId" format="reference"/>
+        <attr name="clearIcon" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="ImageButton">
+        <attr name="icon" format="reference"/>
+        <attr name="iconColor" format="color"/>
+        <attr name="text" format="string"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="textColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="NiceImageView">
+        <attr name="is_circle" format="boolean" />
+        <attr name="is_cover_src" format="boolean" />
+        <attr name="corner_radius" format="dimension" />
+        <attr name="corner_top_left_radius" format="dimension" />
+        <attr name="corner_top_right_radius" format="dimension" />
+        <attr name="corner_bottom_left_radius" format="dimension" />
+        <attr name="corner_bottom_right_radius" format="dimension" />
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="inner_border_width" format="dimension" />
+        <attr name="inner_border_color" format="color" />
+        <attr name="mask_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="PdfImageView">
+        <attr name="mode" format="enum">
+            <enum name="pager" value="0"/>
+            <enum name="scroll" value="1"/>
+        </attr>
+        <attr name="orientation" format="enum">
+            <enum name="vertical" value="0"/>
+            <enum name="horizontal" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RoundView">
+        <attr name="rv_size_width" format="dimension"/>
+        <attr name="rv_size_height" format="dimension"/>
+
+        <attr name="rv_solid_color" format="color"/>
+
+        <attr name="rv_stroke_color" format="color"/>
+        <attr name="rv_stroke_width" format="dimension"/>
+        <attr name="rv_stroke_dash_gap" format="dimension"/>
+        <attr name="rv_stroke_dash_width" format="dimension"/>
+
+        <attr name="rv_corners_radius" format="dimension"/>
+        <attr name="rv_corners_radius_tl" format="dimension"/>
+        <attr name="rv_corners_radius_tr" format="dimension"/>
+        <attr name="rv_corners_radius_bl" format="dimension"/>
+        <attr name="rv_corners_radius_br" format="dimension"/>
+
+        <attr name="rv_padding_top" format="dimension"/>
+        <attr name="rv_padding_left" format="dimension"/>
+        <attr name="rv_padding_right" format="dimension"/>
+        <attr name="rv_padding_bottom" format="dimension"/>
+
+        <attr name="rv_gradient_type" format="enum">
+            <enum name="linear" value="0"/>
+            <enum name="radial" value="1"/>
+            <enum name="sweep" value="2"/>
+        </attr>
+        <attr name="rv_gradient_alpha" format="integer"/>
+        <attr name="rv_gradient_shape" format="enum">
+            <enum name="rectangle" value="0"/>
+            <enum name="oval" value="1"/>
+            <enum name="line" value="2"/>
+            <enum name="ring" value="3"/>
+        </attr>
+        <attr name="rv_gradient_dither" format="boolean"/>
+        <attr name="rv_gradient_radius" format="dimension"/>
+        <attr name="rv_gradient_center_x" format="dimension"/>
+        <attr name="rv_gradient_center_y" format="dimension"/>
+        <attr name="rv_gradient_orientation" format="enum">
+            <enum name="t_b" value="0"/>
+            <enum name="tr_bl" value="1"/>
+            <enum name="r_l" value="2"/>
+            <enum name="br_tl" value="3"/>
+            <enum name="b_t" value="4"/>
+            <enum name="bl_tr" value="5"/>
+            <enum name="l_r" value="6"/>
+            <enum name="tl_br" value="7"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RoundButton">
+        <attr name="rb_size_width" format="dimension"/>
+        <attr name="rb_size_height" format="dimension"/>
+
+        <attr name="rb_solid_color" format="color"/>
+
+        <attr name="rb_stroke_color" format="color"/>
+        <attr name="rb_stroke_width" format="dimension"/>
+        <attr name="rb_stroke_dash_gap" format="dimension"/>
+        <attr name="rb_stroke_dash_width" format="dimension"/>
+
+        <attr name="rb_corners_radius" format="dimension"/>
+        <attr name="rb_corners_radius_tl" format="dimension"/>
+        <attr name="rb_corners_radius_tr" format="dimension"/>
+        <attr name="rb_corners_radius_bl" format="dimension"/>
+        <attr name="rb_corners_radius_br" format="dimension"/>
+
+        <attr name="rb_padding_top" format="dimension"/>
+        <attr name="rb_padding_left" format="dimension"/>
+        <attr name="rb_padding_right" format="dimension"/>
+        <attr name="rb_padding_bottom" format="dimension"/>
+
+        <attr name="rb_gradient_type" format="enum">
+            <enum name="linear" value="0"/>
+            <enum name="radial" value="1"/>
+            <enum name="sweep" value="2"/>
+        </attr>
+        <attr name="rb_gradient_alpha" format="integer"/>
+        <attr name="rb_gradient_shape" format="enum">
+            <enum name="rectangle" value="0"/>
+            <enum name="oval" value="1"/>
+            <enum name="line" value="2"/>
+            <enum name="ring" value="3"/>
+        </attr>
+        <attr name="rb_gradient_dither" format="boolean"/>
+        <attr name="rb_gradient_radius" format="dimension"/>
+        <attr name="rb_gradient_center_x" format="dimension"/>
+        <attr name="rb_gradient_center_y" format="dimension"/>
+        <attr name="rb_gradient_orientation" format="enum">
+            <enum name="t_b" value="0"/>
+            <enum name="tr_bl" value="1"/>
+            <enum name="r_l" value="2"/>
+            <enum name="br_tl" value="3"/>
+            <enum name="b_t" value="4"/>
+            <enum name="bl_tr" value="5"/>
+            <enum name="l_r" value="6"/>
+            <enum name="tl_br" value="7"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RoundEditText">
+        <attr name="ret_size_width" format="dimension"/>
+        <attr name="ret_size_height" format="dimension"/>
+
+        <attr name="ret_solid_color" format="color"/>
+
+        <attr name="ret_stroke_color" format="color"/>
+        <attr name="ret_stroke_width" format="dimension"/>
+        <attr name="ret_stroke_dash_gap" format="dimension"/>
+        <attr name="ret_stroke_dash_width" format="dimension"/>
+
+        <attr name="ret_corners_radius" format="dimension"/>
+        <attr name="ret_corners_radius_tl" format="dimension"/>
+        <attr name="ret_corners_radius_tr" format="dimension"/>
+        <attr name="ret_corners_radius_bl" format="dimension"/>
+        <attr name="ret_corners_radius_br" format="dimension"/>
+
+        <attr name="ret_padding_top" format="dimension"/>
+        <attr name="ret_padding_left" format="dimension"/>
+        <attr name="ret_padding_right" format="dimension"/>
+        <attr name="ret_padding_bottom" format="dimension"/>
+
+        <attr name="ret_gradient_type" format="enum">
+            <enum name="linear" value="0"/>
+            <enum name="radial" value="1"/>
+            <enum name="sweep" value="2"/>
+        </attr>
+        <attr name="ret_gradient_alpha" format="integer"/>
+        <attr name="ret_gradient_shape" format="enum">
+            <enum name="rectangle" value="0"/>
+            <enum name="oval" value="1"/>
+            <enum name="line" value="2"/>
+            <enum name="ring" value="3"/>
+        </attr>
+        <attr name="ret_gradient_dither" format="boolean"/>
+        <attr name="ret_gradient_radius" format="dimension"/>
+        <attr name="ret_gradient_center_x" format="dimension"/>
+        <attr name="ret_gradient_center_y" format="dimension"/>
+        <attr name="ret_gradient_orientation" format="enum">
+            <enum name="t_b" value="0"/>
+            <enum name="tr_bl" value="1"/>
+            <enum name="r_l" value="2"/>
+            <enum name="br_tl" value="3"/>
+            <enum name="b_t" value="4"/>
+            <enum name="bl_tr" value="5"/>
+            <enum name="l_r" value="6"/>
+            <enum name="tl_br" value="7"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="riv_size_width" format="dimension"/>
+        <attr name="riv_size_height" format="dimension"/>
+
+        <attr name="riv_solid_color" format="color"/>
+
+        <attr name="riv_stroke_color" format="color"/>
+        <attr name="riv_stroke_width" format="dimension"/>
+        <attr name="riv_stroke_dash_gap" format="dimension"/>
+        <attr name="riv_stroke_dash_width" format="dimension"/>
+
+        <attr name="riv_corners_radius" format="dimension"/>
+        <attr name="riv_corners_radius_tl" format="dimension"/>
+        <attr name="riv_corners_radius_tr" format="dimension"/>
+        <attr name="riv_corners_radius_bl" format="dimension"/>
+        <attr name="riv_corners_radius_br" format="dimension"/>
+
+        <attr name="riv_padding_top" format="dimension"/>
+        <attr name="riv_padding_left" format="dimension"/>
+        <attr name="riv_padding_right" format="dimension"/>
+        <attr name="riv_padding_bottom" format="dimension"/>
+
+        <attr name="riv_gradient_type" format="enum">
+            <enum name="linear" value="0"/>
+            <enum name="radial" value="1"/>
+            <enum name="sweep" value="2"/>
+        </attr>
+        <attr name="riv_gradient_alpha" format="integer"/>
+        <attr name="riv_gradient_shape" format="enum">
+            <enum name="rectangle" value="0"/>
+            <enum name="oval" value="1"/>
+            <enum name="line" value="2"/>
+            <enum name="ring" value="3"/>
+        </attr>
+        <attr name="riv_gradient_dither" format="boolean"/>
+        <attr name="riv_gradient_radius" format="dimension"/>
+        <attr name="riv_gradient_center_x" format="dimension"/>
+        <attr name="riv_gradient_center_y" format="dimension"/>
+        <attr name="riv_gradient_orientation" format="enum">
+            <enum name="t_b" value="0"/>
+            <enum name="tr_bl" value="1"/>
+            <enum name="r_l" value="2"/>
+            <enum name="br_tl" value="3"/>
+            <enum name="b_t" value="4"/>
+            <enum name="bl_tr" value="5"/>
+            <enum name="l_r" value="6"/>
+            <enum name="tl_br" value="7"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RoundTextView">
+        <attr name="rtv_size_width" format="dimension"/>
+        <attr name="rtv_size_height" format="dimension"/>
+
+        <attr name="rtv_solid_color" format="color"/>
+
+        <attr name="rtv_stroke_color" format="color"/>
+        <attr name="rtv_stroke_width" format="dimension"/>
+        <attr name="rtv_stroke_dash_gap" format="dimension"/>
+        <attr name="rtv_stroke_dash_width" format="dimension"/>
+
+        <attr name="rtv_corners_radius" format="dimension"/>
+        <attr name="rtv_corners_radius_tl" format="dimension"/>
+        <attr name="rtv_corners_radius_tr" format="dimension"/>
+        <attr name="rtv_corners_radius_bl" format="dimension"/>
+        <attr name="rtv_corners_radius_br" format="dimension"/>
+
+        <attr name="rtv_padding_top" format="dimension"/>
+        <attr name="rtv_padding_left" format="dimension"/>
+        <attr name="rtv_padding_right" format="dimension"/>
+        <attr name="rtv_padding_bottom" format="dimension"/>
+
+        <attr name="rtv_gradient_type" format="enum">
+            <enum name="linear" value="0"/>
+            <enum name="radial" value="1"/>
+            <enum name="sweep" value="2"/>
+        </attr>
+        <attr name="rtv_gradient_alpha" format="integer"/>
+        <attr name="rtv_gradient_shape" format="enum">
+            <enum name="rectangle" value="0"/>
+            <enum name="oval" value="1"/>
+            <enum name="line" value="2"/>
+            <enum name="ring" value="3"/>
+        </attr>
+        <attr name="rtv_gradient_dither" format="boolean"/>
+        <attr name="rtv_gradient_radius" format="dimension"/>
+        <attr name="rtv_gradient_center_x" format="dimension"/>
+        <attr name="rtv_gradient_center_y" format="dimension"/>
+        <attr name="rtv_gradient_orientation" format="enum">
+            <enum name="t_b" value="0"/>
+            <enum name="tr_bl" value="1"/>
+            <enum name="r_l" value="2"/>
+            <enum name="br_tl" value="3"/>
+            <enum name="b_t" value="4"/>
+            <enum name="bl_tr" value="5"/>
+            <enum name="l_r" value="6"/>
+            <enum name="tl_br" value="7"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RoundLinearLayout">
+        <attr name="rll_size_width" format="dimension"/>
+        <attr name="rll_size_height" format="dimension"/>
+
+        <attr name="rll_solid_color" format="color"/>
+
+        <attr name="rll_stroke_color" format="color"/>
+        <attr name="rll_stroke_width" format="dimension"/>
+        <attr name="rll_stroke_dash_gap" format="dimension"/>
+        <attr name="rll_stroke_dash_width" format="dimension"/>
+
+        <attr name="rll_corners_radius" format="dimension"/>
+        <attr name="rll_corners_radius_tl" format="dimension"/>
+        <attr name="rll_corners_radius_tr" format="dimension"/>
+        <attr name="rll_corners_radius_bl" format="dimension"/>
+        <attr name="rll_corners_radius_br" format="dimension"/>
+
+        <attr name="rll_padding_top" format="dimension"/>
+        <attr name="rll_padding_left" format="dimension"/>
+        <attr name="rll_padding_right" format="dimension"/>
+        <attr name="rll_padding_bottom" format="dimension"/>
+
+        <attr name="rll_gradient_type" format="enum">
+            <enum name="linear" value="0"/>
+            <enum name="radial" value="1"/>
+            <enum name="sweep" value="2"/>
+        </attr>
+        <attr name="rll_gradient_alpha" format="integer"/>
+        <attr name="rll_gradient_shape" format="enum">
+            <enum name="rectangle" value="0"/>
+            <enum name="oval" value="1"/>
+            <enum name="line" value="2"/>
+            <enum name="ring" value="3"/>
+        </attr>
+        <attr name="rll_gradient_dither" format="boolean"/>
+        <attr name="rll_gradient_radius" format="dimension"/>
+        <attr name="rll_gradient_center_x" format="dimension"/>
+        <attr name="rll_gradient_center_y" format="dimension"/>
+        <attr name="rll_gradient_orientation" format="enum">
+            <enum name="t_b" value="0"/>
+            <enum name="tr_bl" value="1"/>
+            <enum name="r_l" value="2"/>
+            <enum name="br_tl" value="3"/>
+            <enum name="b_t" value="4"/>
+            <enum name="bl_tr" value="5"/>
+            <enum name="l_r" value="6"/>
+            <enum name="tl_br" value="7"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RoundRelativeLayout">
+        <attr name="rrl_size_width" format="dimension"/>
+        <attr name="rrl_size_height" format="dimension"/>
+
+        <attr name="rrl_solid_color" format="color"/>
+
+        <attr name="rrl_stroke_color" format="color"/>
+        <attr name="rrl_stroke_width" format="dimension"/>
+        <attr name="rrl_stroke_dash_gap" format="dimension"/>
+        <attr name="rrl_stroke_dash_width" format="dimension"/>
+
+        <attr name="rrl_corners_radius" format="dimension"/>
+        <attr name="rrl_corners_radius_tl" format="dimension"/>
+        <attr name="rrl_corners_radius_tr" format="dimension"/>
+        <attr name="rrl_corners_radius_bl" format="dimension"/>
+        <attr name="rrl_corners_radius_br" format="dimension"/>
+
+        <attr name="rrl_padding_top" format="dimension"/>
+        <attr name="rrl_padding_left" format="dimension"/>
+        <attr name="rrl_padding_right" format="dimension"/>
+        <attr name="rrl_padding_bottom" format="dimension"/>
+
+        <attr name="rrl_gradient_type" format="enum">
+            <enum name="linear" value="0"/>
+            <enum name="radial" value="1"/>
+            <enum name="sweep" value="2"/>
+        </attr>
+        <attr name="rrl_gradient_alpha" format="integer"/>
+        <attr name="rrl_gradient_shape" format="enum">
+            <enum name="rectangle" value="0"/>
+            <enum name="oval" value="1"/>
+            <enum name="line" value="2"/>
+            <enum name="ring" value="3"/>
+        </attr>
+        <attr name="rrl_gradient_dither" format="boolean"/>
+        <attr name="rrl_gradient_radius" format="dimension"/>
+        <attr name="rrl_gradient_center_x" format="dimension"/>
+        <attr name="rrl_gradient_center_y" format="dimension"/>
+        <attr name="rrl_gradient_orientation" format="enum">
+            <enum name="t_b" value="0"/>
+            <enum name="tr_bl" value="1"/>
+            <enum name="r_l" value="2"/>
+            <enum name="br_tl" value="3"/>
+            <enum name="b_t" value="4"/>
+            <enum name="bl_tr" value="5"/>
+            <enum name="l_r" value="6"/>
+            <enum name="tl_br" value="7"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RoundConstraintLayout">
+        <attr name="rcl_size_width" format="dimension"/>
+        <attr name="rcl_size_height" format="dimension"/>
+
+        <attr name="rcl_solid_color" format="color"/>
+
+        <attr name="rcl_stroke_color" format="color"/>
+        <attr name="rcl_stroke_width" format="dimension"/>
+        <attr name="rcl_stroke_dash_gap" format="dimension"/>
+        <attr name="rcl_stroke_dash_width" format="dimension"/>
+
+        <attr name="rcl_corners_radius" format="dimension"/>
+        <attr name="rcl_corners_radius_tl" format="dimension"/>
+        <attr name="rcl_corners_radius_tr" format="dimension"/>
+        <attr name="rcl_corners_radius_bl" format="dimension"/>
+        <attr name="rcl_corners_radius_br" format="dimension"/>
+
+        <attr name="rcl_padding_top" format="dimension"/>
+        <attr name="rcl_padding_left" format="dimension"/>
+        <attr name="rcl_padding_right" format="dimension"/>
+        <attr name="rcl_padding_bottom" format="dimension"/>
+
+        <attr name="rcl_gradient_type" format="enum">
+            <enum name="linear" value="0"/>
+            <enum name="radial" value="1"/>
+            <enum name="sweep" value="2"/>
+        </attr>
+        <attr name="rcl_gradient_alpha" format="integer"/>
+        <attr name="rcl_gradient_shape" format="enum">
+            <enum name="rectangle" value="0"/>
+            <enum name="oval" value="1"/>
+            <enum name="line" value="2"/>
+            <enum name="ring" value="3"/>
+        </attr>
+        <attr name="rcl_gradient_dither" format="boolean"/>
+        <attr name="rcl_gradient_radius" format="dimension"/>
+        <attr name="rcl_gradient_center_x" format="dimension"/>
+        <attr name="rcl_gradient_center_y" format="dimension"/>
+        <attr name="rcl_gradient_orientation" format="enum">
+            <enum name="t_b" value="0"/>
+            <enum name="tr_bl" value="1"/>
+            <enum name="r_l" value="2"/>
+            <enum name="br_tl" value="3"/>
+            <enum name="b_t" value="4"/>
+            <enum name="bl_tr" value="5"/>
+            <enum name="l_r" value="6"/>
+            <enum name="tl_br" value="7"/>
+        </attr>
+    </declare-styleable>
+</resources>

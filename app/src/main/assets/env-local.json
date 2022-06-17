@@ -1,0 +1,146 @@
+{
+  "server": {
+    "name": "服务地址",
+    "configs": [
+      {
+        "name": "LJF",
+        "value": "http://192.168.40.40:8080/"
+      },
+      {
+        "name": "LHB",
+        "value": "http://192.168.40.182:8080/"
+      },
+      {
+        "name": "LQ",
+        "value": "http://192.168.30.126:8081/"
+      },
+      {
+        "name": "WXB",
+        "value": "http://192.168.40.182:8080/"
+      },
+      {
+        "name": "SIT",
+        "value": "http://sit-business.yl-dt.com/gateway/"
+      },
+      {
+        "name": "UAT",
+        "value": "http://uat-business.yl-dt.com/gateway/"
+      },
+      {
+        "name": "生产",
+        "value": "https://yl.yl-dt.com/gateway/"
+      }
+    ]
+  },
+  "problem": {
+    "name": "常见问题",
+    "configs": [
+      {
+        "name": "SIT",
+        "value": "http://sit-business.yl-dt.com/h5/appPage/question.html"
+      },
+      {
+        "name": "UAT",
+        "value": "http://uat-business.yl-dt.com/h5/appPage/question.html"
+      },
+      {
+        "name": "生产",
+        "value": "https://yl.yl-dt.com/h5/appPage/question.html"
+      }
+    ]
+  },
+  "download": {
+    "name": "下载地址",
+    "configs": [
+      {
+        "name": "SIT",
+        "value": "http://sit-business.yl-dt.com/h5/appPage/downloadapp.html"
+      },
+      {
+        "name": "UAT",
+        "value": "http://uat-business.yl-dt.com/h5/appPage/downloadapp.html"
+      },
+      {
+        "name": "生产",
+        "value": "https://yl.yl-dt.com/h5/appPage/downloadapp.html"
+      }
+    ]
+  },
+  "wb_id": {
+    "name": "人脸核身：Id",
+    "configs": [
+      {
+        "name": "测试",
+        "value": "TIDAMJZ6"
+      },
+      {
+        "name": "生产",
+        "value": "IDATeMGe"
+      }
+    ]
+  },
+  "wb_license": {
+    "name": "人脸核身：License",
+    "configs": [
+      {
+        "name": "测试",
+        "value": "s/W1Yj5dWq7x55O+y+H6zl5nVJnjooWQY0daoBCfc/ik9Q4UU3To5ZZhXlQUjC+DTVY+FeTXcD0QZqnukY0l6BzRoA2JjYjjJ7dW6dX3cTaDx2TdRpCVh32QG4B9QYECkVEx9XG54bxDcJ/vIllUa6o4ctFCIfLNtWGgF93rFTwNELt/QIB3geMC/5FpdP1HOlSmFMvk0jrG0T3xD1AsrS/sn9xTrrHg4OL8/JkGwKyLum7lcHlnS3NugnbkLat6wBvQ3zVk418Mr5Gdq0obsfsbV6zrcGJ2TDCWDaHqB+9nlqWWbdMxRPwxImomClQrJmV8J8buOPPi357Y+C9/Wg=="
+      },
+      {
+        "name": "生产",
+        "value": "txM/W/PTUHV0lq1tDGyRqqcU41ZqO1ac+YcBQIHPSro8VujppEn9WW1ZeE5WrhfOKoTkL/uUz/k5CRRIYgQ8gLG+S9Fr/vY+OUMwJ58Y9Uj5BM+phKihKel7o/x4HkfFh2v7unS4ct7BtBy6F4WI1wHtc+YOI8As5J+DO55NUTlqXQh9BMvi8l1PduYJguavd6/F8/FUuHzNJ5cdLRlxsoCHiEvae+Zbu3Bl39jlX5GlLzBbBhDDuifdc/flxcef9m6cL5uhr7H+Z8exb7t17ZRuN/jLjz/mEnRZvkXBHlPQzde4ARu9rCvH8CnGobDOjlkvAHYLEQlp4nr3E9Pxow=="
+      }
+    ]
+  },
+  "scanner": {
+    "name": "扫码地址",
+    "configs": [
+      {
+        "name": "SIT",
+        "value": "http://sit-business.yl-dt.com/scanner"
+      },
+      {
+        "name": "UAT",
+        "value": "http://uat-business.yl-dt.com/scanner"
+      },
+      {
+        "name": "生产",
+        "value": "https://yl.yl-dt.com/scanner"
+      }
+    ]
+  },
+  "register": {
+    "name": "注册地址",
+    "configs": [
+      {
+        "name": "SIT",
+        "value": "http://sit-business.yl-dt.com/h5/appPage/finance-app.html"
+      },
+      {
+        "name": "UAT",
+        "value": "http://uat-business.yl-dt.com/h5/appPage/finance-app.html"
+      },
+      {
+        "name": "生产",
+        "value": "https://yl.yl-dt.com/h5/appPage/finance-app.html"
+      }
+    ]
+  },
+  "information": {
+    "name": "注册信息",
+    "configs": [
+      {
+        "name": "SIT",
+        "value": "http://sit-business.yl-dt.com/h5/appPage/finance-detail.html"
+      },
+      {
+        "name": "UAT",
+        "value": "http://uat-business.yl-dt.com/h5/appPage/finance-detail.html"
+      },
+      {
+        "name": "生产",
+        "value": "https://yl.yl-dt.com/h5/appPage/finance-detail.html"
+      }
+    ]
+  }
+}

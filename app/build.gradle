@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion ANDROID_SDK_COMPILE
+    buildToolsVersion ANDROID_BUILD_TOOLS
+    defaultConfig {
+        applicationId "${APP_ID}"
+        versionCode APP_VERSION_CODE
+        versionName "${APP_VERSION_NAME}"
+        minSdkVersion ANDROID_SDK_MIN
+        targetSdkVersion ANDROID_SDK_TARGET
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures {
+        dataBinding true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    testImplementation "junit:junit:${TEST_JUNIT}"
+    androidTestImplementation "androidx.test.ext:junit:${TEST_ANDROIDX_JUNIT}"
+    androidTestImplementation "androidx.test.espresso:espresso-core:${TEST_ANDROIDX_ESPRESSO}"
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "androidx.appcompat:appcompat:1.3.0"
+    implementation "com.google.android.material:material:1.3.0"
+    implementation "androidx.constraintlayout:constraintlayout:2.0.4"
+
+    implementation project(path: ':master')
+}
