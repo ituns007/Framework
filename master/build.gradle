@@ -38,7 +38,7 @@ dependencies {
 
     api "org.ituns.android:logcat:1.0.0"
     api "org.ituns.android:concurrent:1.0.3"
-    api "org.ituns.network:okhttp-stable:2.0.8"
+    api "org.ituns.network:okhttp-stable:2.0.9"
 
     api "com.google.code.gson:gson:2.8.6"
     api "com.google.guava:guava:31.0.1-android"
