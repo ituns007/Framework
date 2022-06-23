@@ -16,11 +16,8 @@ import androidx.lifecycle.MutableLiveData;
 import com.tencent.smtt.sdk.QbSdk;
 import com.tencent.smtt.sdk.TbsReaderView;
 
-import org.ituns.framework.master.service.logcat.Logcat;
-import org.ituns.framework.master.service.persist.DiskProxy;
-import org.ituns.framework.master.service.tasks.BackProxy;
+import org.ituns.framework.master.service.tasks.AsyncProxy;
 import org.ituns.framework.master.tools.network.IUri;
-import org.ituns.framework.master.tools.security.Encrypt;
 import org.ituns.framework.master.tools.storage.IStorage;
 import org.ituns.framework.master.tools.storage.IStream;
 
@@ -83,7 +80,7 @@ public class TbsBrowserView extends FrameLayout implements TbsReaderView.ReaderC
 
     public LiveData<File> generateFileFromUrl(String fileName, Uri uri) {
         MutableLiveData<File> liveData = new MutableLiveData<>();
-        BackProxy.post(() -> {
+        AsyncProxy.execute(() -> {
             byte[] bytes = readByteFromUri(uri);
             File file = writeBytesToFile(fileName, bytes);
             liveData.postValue(file);
@@ -93,7 +90,7 @@ public class TbsBrowserView extends FrameLayout implements TbsReaderView.ReaderC
 
     public LiveData<File> generateFileFromBytes(String fileName, byte[] bytes) {
         MutableLiveData<File> liveData = new MutableLiveData<>();
-        BackProxy.post(() -> {
+        AsyncProxy.execute(() -> {
             File file = writeBytesToFile(fileName, bytes);
             liveData.postValue(file);
         });

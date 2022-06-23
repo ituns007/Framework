@@ -3,7 +3,10 @@ package org.ituns.framework.activity;
 import android.Manifest;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+
+import com.tencent.smtt.sdk.QbSdk;
 
 import org.ituns.framework.R;
 import org.ituns.framework.master.ContextWrapper;
