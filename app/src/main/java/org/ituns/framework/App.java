@@ -17,7 +17,7 @@ public class App extends FrameworkApp {
     protected ServiceConfig onServiceConfig() {
         return new ServiceConfig.Builder()
                 .add(new LogConfig.Builder(App.this)
-                        .debug(false)
+                        .debug(true)
                         .level(Level.VERBOSE)
                         .tag("App")
                         .build())
@@ -33,7 +33,7 @@ public class App extends FrameworkApp {
                         .build())
                 .add(new EnvConfig.Builder(App.this)
                         .tag("mc")
-                        .def("env-def.properties")
+                        .def("env.properties")
                         .build())
                 .add(new TbsConfig.Builder(App.this)
                         .build())

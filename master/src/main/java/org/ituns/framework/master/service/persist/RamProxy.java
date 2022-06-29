@@ -7,19 +7,14 @@ public class RamProxy {
     private static final String TAG = "CacheProxy";
 
     public static String get(String key) {
-        RamStorage cache = PersistService.get().ram();
-        if(cache == null) {
-            Logcat.i(TAG, "global cache is null.");
-            return null;
-        }
-        return cache.get(key);
+        return get(key, "");
     }
 
     public static String get(String key, String defaultValue) {
         RamStorage cache = PersistService.get().ram();
         if(cache == null) {
             Logcat.i(TAG, "global cache is null.");
-            return null;
+            return defaultValue;
         }
         return cache.get(key, defaultValue);
     }
