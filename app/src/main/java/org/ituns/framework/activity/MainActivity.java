@@ -3,7 +3,6 @@ package org.ituns.framework.activity;
 import android.Manifest;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 
 import com.tencent.smtt.sdk.QbSdk;
@@ -19,8 +18,6 @@ import org.ituns.framework.master.service.tasks.MainProxy;
 import org.ituns.framework.master.service.tbs.TbsHelper;
 import org.ituns.framework.master.tools.java.IList;
 import org.ituns.framework.master.tools.media.IBitmap;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.io.File;
 import java.util.HashMap;

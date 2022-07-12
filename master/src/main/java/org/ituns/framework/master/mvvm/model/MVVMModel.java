@@ -117,12 +117,16 @@ public abstract class MVVMModel<T extends HttpResp> {
 
     private Request httpRequest(MVVMData data) {
         String url = onHost() + onPath(data);
-        return onRequest(url, data);
+        return onRequest(url, onParams(data));
     }
 
     protected abstract String onHost();
 
     protected abstract String onPath(MVVMData data);
+
+    protected MVVMData onParams(MVVMData data) {
+        return data;
+    }
 
     protected abstract Request onRequest(String url, MVVMData data);
 
