@@ -69,7 +69,7 @@ public class WebBrowserFragment<T> extends MediaFragment {
         if(!hidden) resumeFragment();
     }
 
-    private void resumeFragment() {
+    protected void resumeFragment() {
         WebView webView = mWebView;
         if(webView != null) {
             webView.resumeTimers();
