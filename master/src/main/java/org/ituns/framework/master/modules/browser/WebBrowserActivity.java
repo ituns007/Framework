@@ -53,6 +53,26 @@ public abstract class WebBrowserActivity<T> extends MediaActivity {
         configBrowserContent(mWebView);
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        WebView webView = mWebView;
+        if(webView != null) {
+            webView.resumeTimers();
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        WebView webView = mWebView;
+        if(webView != null) {
+            webView.pauseTimers();
+            webView.destroy();
+            mWebView = null;
+        }
+    }
+
     public void pressWebBack() {
         WebView webView = mWebView;
         if(webView != null && webView.canGoBack()) {

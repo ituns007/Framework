@@ -57,6 +57,36 @@ public class WebBrowserFragment<T> extends MediaFragment {
         configBrowserContent(mWebView);
     }
 
+    @Override
+    @CallSuper
+    public void onResume() {
+        super.onResume();
+        if(!isHidden()) resumeFragment();
+    }
+
+    @Override
+    public void onHiddenChanged(boolean hidden) {
+        if(!hidden) resumeFragment();
+    }
+
+    private void resumeFragment() {
+        WebView webView = mWebView;
+        if(webView != null) {
+            webView.resumeTimers();
+        }
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        WebView webView = mWebView;
+        if(webView != null) {
+            webView.pauseTimers();
+            webView.destroy();
+            mWebView = null;
+        }
+    }
+
     public void pressWebBack() {
         WebView webView = mWebView;
         if(webView != null && webView.canGoBack()) {
