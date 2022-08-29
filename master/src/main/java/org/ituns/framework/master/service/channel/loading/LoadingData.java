@@ -17,6 +17,12 @@ public class LoadingData extends ChannelData {
         this.theme = theme;
         this.duration = DURATION;
     }
+    public LoadingData(boolean isShow, String text, DialogSettings.THEME theme, int duration) {
+        this.isShow = isShow;
+        this.text = text;
+        this.theme = theme;
+        this.duration = duration;
+    }
 
     public boolean isShow() {
         return isShow;
